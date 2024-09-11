@@ -28,6 +28,9 @@ public class PlayerMovement : MonoBehaviour
         m_Movement.Set(horizontal, 0f, vertical);
         m_Movement.Normalize();
 
+        float mouseX = Input.GetAxis("Mouse X");
+        float mouseY = Input.GetAxis("Mouse Y");
+
         // Animation
         bool hasHorizontalInput = !Mathf.Approximately(horizontal, 0f);
         bool hasVerticalInput = !Mathf.Approximately(vertical, 0f);

@@ -20,6 +20,9 @@ public class QuitButton : MonoBehaviour
 
     void Exit()
     {
+        ColorBlock cb = button.colors;
+		cb.normalColor = Color.red;
+		button.colors = cb;
         Application.Quit();
     }
 }
